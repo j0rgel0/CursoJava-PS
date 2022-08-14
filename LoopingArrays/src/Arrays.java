@@ -6,7 +6,7 @@ public class Arrays {
         theVals[1] = 20.0f;
         theVals[2] = 15.0f;
 
- */ 
+ */
         float[] theVals = {10.0f, 20.0f, 15.0f};
         float sum = 0.0f;
         for (int index = 0; index < theVals.length; index++){
