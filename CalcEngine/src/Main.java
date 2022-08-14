@@ -15,9 +15,12 @@ public class Main {
             result = value1 * value2;
             opCode = '*';
         }else if(opCode == 'd'){
-            result = value1 / value2;
-            opCode = '/';
+            if (value2 != 0) {
+                result = value1 / value2;
+                opCode = '/';
+            }
         }else {
+            System.out.println("Invalid opCode: " + opCode);
             result = 0.0d;
         }
         System.out.println(value1+" "+ opCode +" "+value2+" = "+result);
