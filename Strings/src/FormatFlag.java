@@ -18,6 +18,8 @@ public class FormatFlag {
         System.out.println(s1); // W:5 X:235
         s2 = String.format("Y:%d Z:%d", y, z);
         System.out.println(s2); // Y:481 Z:12
+
+        // The number 4 is that expects 4 digits.
         s3 = String.format("W:%4d X:%4d", w, x);
         System.out.println(s3); // W:   5 X: 235
         s4 = String.format("Y:%4d Z:%4d", y, z);
