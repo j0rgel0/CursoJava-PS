@@ -137,13 +137,18 @@ public class Main {
                 "zero", "one", "two", "three", "four",
                 "five", "six", "seven", "eight", "nine"
         };
-        double value = 0d;
+        double value = -1d; //Starting with something that is NOT valid.
         for (int index = 0; index < numberWords.length; index++) {
             if (word.equals(numberWords[index])) {
                 value = index;
                 break; // Using break exits the loop and then runs the next statement after the loop
             }
         }
+        if (value == -1d){
+           value = Double.parseDouble(word);
+        }
         return value;
+        // when 2022-12-25 37
+        // 2022-12-25 plus 37 days is 2023-01-31
     }
 }
