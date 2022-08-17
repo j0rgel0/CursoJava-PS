@@ -1,17 +1,28 @@
 public class Flight {
-    int passengers;
-    int seats;
+    //Adding private: To applying Access Modifiers
+    private int passengers;
+    private int seats;
+
+    public int getPassengers() {
+        return passengers;
+    }
 
     //Constructor
-    Flight(){
+    public Flight(){
         seats = 150;
         passengers = 0;
     }
 
-    void add1Passenger(){
+    public void add1Passenger(){
         if(passengers < seats){
             passengers += 1;
+        } else {
+            handleTooMany();
         }
+    }
+
+    private void handleTooMany() {
+        System.out.println("Too many");
     }
 }
 
