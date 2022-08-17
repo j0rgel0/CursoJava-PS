@@ -18,6 +18,7 @@ public class Main {
         System.out.println(slcToSf2.passengers); // 1
 
         //These are NOT primitive types, there are reference types.
+        //The only thing it assigns it's the reference
         slcToSf2 = nycToLv1;
 
         System.out.println(slcToSf2.passengers); // 0
