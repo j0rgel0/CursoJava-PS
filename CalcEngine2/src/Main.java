@@ -16,7 +16,7 @@ public class Main {
 
         for (MathEquation equation : equations) {
             equation.execute();
-            System.out.println("result = " + equation.getResult());
+            System.out.println("result = " + equation.getLeftVal() + " " + equation.getOpCode() + " " + equation.getRightVal() + " = " + equation.getResult());
         }
 
     }
