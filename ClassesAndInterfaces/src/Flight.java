@@ -24,6 +24,21 @@ public class Flight {
     private void handleTooMany() {
         System.out.println("Too many");
     }
+
+    public boolean hasRoom(Flight f2){
+        // Special reference: this
+        // Making clear with "this" to reduce ambiguity
+        int total = this.passengers + f2.passengers;
+        return  total <= seats;
+    }
+
+    public Flight createNewWithBoth(Flight f2) {
+        Flight newFlight = new Flight();
+        newFlight.seats = seats;
+        newFlight.passengers = passengers + f2.passengers;
+        System.out.println("newFlight: "+newFlight);
+        return newFlight;
+    }
 }
 
 

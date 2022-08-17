@@ -26,5 +26,29 @@ public class Main {
         nycToLv1.add1Passenger();
         nycToLv1.add1Passenger();
         System.out.println(slcToSf2.getPassengers()); // 2
+        slcToSf2.add1Passenger();
+        System.out.println(slcToSf2.getPassengers()); // 3
+
+        //Flight 3
+        Flight lax1 = new Flight();
+        //Flight 4
+        Flight lax2 = new Flight();
+        lax1.add1Passenger();
+        lax1.add1Passenger();
+        lax2.add1Passenger();
+        System.out.println(lax1.getPassengers()); // 2
+        System.out.println(lax2.getPassengers()); // 1
+
+        //Flight 5
+        Flight lax3 =  null;
+        System.out.println("Flight f3: "+lax3);
+
+        if(lax1.hasRoom(lax2)){
+            lax3 = lax1.createNewWithBoth(lax2);
+            System.out.println("hasRoom f3 (passengers): "+lax3.getPassengers());
+        }
+        if(lax3 != null){
+            System.out.println("Flights combined");
+        }
     }
 }
