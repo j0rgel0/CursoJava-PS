@@ -50,5 +50,7 @@ public class Main {
         if(lax3 != null){
             System.out.println("Flights combined");
         }
+        slcToSf2.setSeats(200);
+        System.out.println(slcToSf2.getSeats()); // 200
     }
 }
